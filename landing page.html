@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Landing Page</title>
+      <style type="text/css">
+         header{
+            width:100%;
+            height:100vh;
+            background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)),url('file:///C:/Users/deeks/OneDrive/Pictures/Restaurant-Instagram-Photography.png');
+            background-size:cover;
+            font-family:sans-serif;
+         }
+         nav{
+            width:100%;
+            height:100px;
+            color:white;
+            display:flex;
+            justify-content:space-around;
+            align-items:center;
+         }
+         .logo{
+            font-size:1.5em;
+            letter-spacing:2px;
+            font-family:Brush Script;
+
+         }
+         .menu a{
+             text-decoration:none;
+             color:white;
+             padding:10px 20px;
+             position:relative;
+         }
+         .menu a:before{
+            position:absolute;
+            content:'';
+            top:0;
+            left:0;
+            height:100%;
+            width:0%;
+            border-bottom:2px solid indianred;
+            transition:0.4s linear;
+         }
+         .menu a:hover:before{
+            width:90%;
+         }
+         .h-txt{
+            max-width:650px;
+            position:absolute;
+            top:35%;
+            left:15%;
+            color:white;
+         }
+         .h-txt span{
+            font-family:monotype corsiva;
+            color:orange;
+            font-size:2.5em;
+         }
+         .h-txt h1{
+            font-size:3em;
+            font-family:Brush Script; 
+         }
+         .h-txt a{
+            text-decoration:none;
+            background-color:orange;
+            color:white;
+            padding:10px 20px;
+            letter-spacing:5px;
+            transition:0.4s;
+         }
+         .h-txt a:hover{
+            background:transparent;
+            border:1px solid indianred;
+         }
+
+      </style>
+    </head>
+    <body>
+    <header>
+    <nav>
+        
+        <div class="logo">
+            <img src="file:///C:/Users/deeks/OneDrive/Pictures/logo.jpg" width="40px" height="30px"> 
+           RestFood<br>
+           RESTAURANT
+        </div>
+        <div class="menu">
+            <a href="#">HOME</a>
+            <a href="#">ABOUT US</a>
+            <a href="#">CHEFS</a>
+            <a href="#">MENU</a>
+            <a href="#">GALLERY</a>
+            <a href="#">CONTACTS</a>
+        </div>
+
+    </nav>
+    <section class="h-txt">
+        <span>Most delicious flavor combos</span>
+        <h1>Feels Like Home,Tastes Like Paradise.</h1>
+        <br>
+        <a href="#">OPEN NOW</a>
+    </section>
+    </header>
+    </body>
+</html>
